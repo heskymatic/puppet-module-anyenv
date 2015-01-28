@@ -2,7 +2,7 @@ define anyenv::env (
   $user,
   $env,
   $home = "/home/${user}",
-  $profile = "${home}/.bash_profile",
+  $profile = '.bash_profile',
 ) {
   anchor {
     "anyenv::env::${user}::begin":

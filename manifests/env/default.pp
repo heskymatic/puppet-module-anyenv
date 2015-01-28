@@ -29,7 +29,7 @@ define anyenv::env::default (
       provider => shell,
       onlyif   => "grep -vi \"${version}\" ${home}/.anyenv/envs/${env}/version > /dev/null 2>&1",
       user     => $user,
-      require  => [ 
+      require  => [
         Exec["install ${env} ${version} for ${user}"],
         Anchor["anyenv::env::default::${user}::${env}::${version}::begin"],
       ],

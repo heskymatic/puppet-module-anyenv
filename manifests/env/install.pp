@@ -3,7 +3,7 @@ define anyenv::env::install (
   $env,
   $version,
   $home = "/home/${user}",
-  $profile = "${home}/.bash_profile",
+  $profile = '.bash_profile',
 ) {
   anchor {
     "anyenv::env::install::${user}::${env}::${version}::begin":
