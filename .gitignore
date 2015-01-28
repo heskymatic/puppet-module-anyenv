@@ -1,0 +1,8 @@
+.tmp
+.librarian
+.vagrant
+Gemfile.lock
+Puppetfile.lock
+pkg/
+spec/fixtures/
+*.swp

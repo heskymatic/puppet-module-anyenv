@@ -1,0 +1,14 @@
+{
+  "name": "cewood-anyenv",
+  "version": "0.0.1",
+  "author": "cewood",
+  "summary": "Puppet module to install anyenv and manage rbenv style environment managers",
+  "license": "Apache License, Version 2.0",
+  "source": "git@github.com:cewood/puppet-anyenv.git",
+  "project_page": "https://github.com/cewood/puppet-anyenv",
+  "issues_url": "https://github.com/cewood/puppet-anyenv/issues",
+  "dependencies": [
+    {"name": "puppetlabs/vcsrepo","version_requirement":">= 1.2.0"},
+    {"name": "puppetlabs/stdlib","version_requirement":">= 3.0.0"}
+  ]
+}
