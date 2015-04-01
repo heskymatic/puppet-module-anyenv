@@ -12,7 +12,7 @@ define anyenv::env (
       require => Anchor["anyenv::env::${user}::${env}::begin"];
   }
 
-  if ! defined( Anchor["anyenv::setup::${user}::begin"] ) {
+  if ! defined( Anchor["anyenv::setup::${user}::begin"] ) and ! defined(Anyenv::Setup["anyenv_${user}"]) {
     anyenv::setup { "anyenv_${user}":
       user    => $user,
       home    => $home,
